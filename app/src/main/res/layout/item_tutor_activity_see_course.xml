@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:paddingLeft="10dp"
+    tools:context=".tutor.adapter.home.course.TutorSeeCourseAdapter">
+
+    <RelativeLayout
+        android:id="@+id/btnCourse"
+        android:background="@drawable/home_right_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+        <ImageView
+            android:id="@+id/imgCourse"
+            android:src="@drawable/ic_en"
+            style="@style/home_layout_inside_image"/>
+        <TextView
+            android:layout_below="@id/imgCourse"
+            android:text="@string/text_english"
+            style="@style/home_layout_inside_textview" />
+    </RelativeLayout>
+</LinearLayout>

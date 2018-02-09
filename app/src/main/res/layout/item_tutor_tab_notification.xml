@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".student.adapter.FragmentTapNotificationAdapter">
+
+    <RelativeLayout style="@style/notification_item_layout">
+        
+        <TextView
+            android:id="@+id/tvDate"
+            android:text="aaaa"
+            style="@style/notification_item_layout_date" />
+        
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:layout_below="@id/tvDate"
+            android:src="@drawable/ic_warning"
+            style="@style/notification_item_layout_img" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Title"
+            android:layout_below="@id/tvDate"
+            android:layout_toRightOf="@id/imgNotification"
+            style="@style/notification_item_layout_title" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:text="Detail"
+            android:layout_below="@id/tvTitle"
+            style="@style/notification_item_layout_detail" />
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="@dimen/line_bottom_side"
+        android:layout_marginLeft="@dimen/line_bottom_side"
+        android:background="@drawable/layout_line_bottom_gray"/>
+</LinearLayout>

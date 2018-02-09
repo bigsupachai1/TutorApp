@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="siam.big.tutor.LoginActivity">
+
+        <!-- Logo -->
+        <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            />
+        </RelativeLayout>
+        <!-- Username -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_border_conor_sky"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/ic_user_white"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"/>
+            <EditText
+                android:id="@+id/editUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_username"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/color_sky_l"
+                android:layout_marginRight="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <!-- Password -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border_conor_sky"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/ic_lock_white"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="8dp"/>
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_password"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/color_sky_l"
+            android:layout_marginRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="@string/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_border_conor_white"/>
+
+</LinearLayout>

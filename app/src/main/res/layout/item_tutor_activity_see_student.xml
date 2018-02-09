@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:background="#00ffffff"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tutor.adapter.home.student.TutorSeeStudentAdapter">
+
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:background="@drawable/layout_border_conor"
+        style="@style/notification_item_layout">
+
+        
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:text="Student Name"
+            android:layout_toRightOf="@id/imgStudent"
+            style="@style/textview_student_name"
+            />
+        <TextView
+            android:id="@+id/tvCourse"
+            android:text="Course Name"
+            android:layout_below="@id/tvStudentName"
+            android:layout_toRightOf="@id/imgStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/color_blone"/>
+        <RatingBar
+            android:id="@+id/rbReview"
+            android:layout_below="@id/tvCourse"
+            android:layout_toRightOf="@id/imgStudent"
+            style="?android:ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/tvDetail"
+            android:text="DetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetailDetail"
+            android:layout_below="@id/rbReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="10"
+            />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:text="30/02/2560"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_blone"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="TutorSeeCourseActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        style="@style/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/text_course"
+                style="@style/toolbar_title" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- row 1 -->
+        <LinearLayout style="@style/layout_tutor_see_course">
+            <RelativeLayout
+                android:id="@+id/btnEnglish"
+                android:background="@drawable/home_left_top"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgEnglish"
+                    android:src="@drawable/ic_en"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgEnglish"
+                    android:text="@string/text_english"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnScience"
+                android:background="@drawable/home_right_top"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgScience"
+                    android:src="@drawable/ic_science"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgScience"
+                    android:text="@string/text_science"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- row 2 -->
+        <LinearLayout
+            style="@style/layout_tutor_see_course">
+            <RelativeLayout
+                android:id="@+id/btnArt"
+                android:background="@drawable/home_left_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgArt"
+                    android:src="@drawable/ic_art"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgArt"
+                    android:text="@string/text_art"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnMusic"
+                android:background="@drawable/home_right_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgMusic"
+                    android:src="@drawable/ic_music"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgMusic"
+                    android:text="@string/text_music"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- row 3 -->
+        <LinearLayout
+            style="@style/layout_tutor_see_course">
+            <RelativeLayout
+                android:id="@+id/btnMath"
+                android:background="@drawable/home_left_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgMath"
+                    android:src="@drawable/ic_math"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgMath"
+                    android:text="@string/text_math"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btnThai"
+                android:background="@drawable/home_right_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgThai"
+                    android:src="@drawable/ic_th"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgThai"
+                    android:text="@string/text_thai"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

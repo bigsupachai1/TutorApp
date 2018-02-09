@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".tutor.adapter.home.student.TutorSeeStudentTotalAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+        
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/layout_border_conor"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/imgStudent"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/layout_border_conor_black_not_pressed">
+        
+        <ImageView
+            android:id="@+id/imgHuman"
+            android:src="@drawable/ic_human_blue"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="3dp"/>
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_toRightOf="@id/imgHuman"
+            android:text="Student Name"
+            style="@style/textview_student_name" />
+
+        <ImageView
+            android:id="@+id/imgCourse"
+            android:src="@drawable/ic_book_blone"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_below="@id/tvStudentName"/>
+
+        <TextView
+            android:id="@+id/tvCourse"
+            android:text="Course Name"
+            android:layout_toRightOf="@id/imgCourse"
+            android:layout_below="@id/tvStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/color_blone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/tvCourse">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvTitleGender"
+                    android:text="Gender : "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_gray_l" />
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_toRightOf="@id/tvTitleGender"
+                    android:text="Women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:maxLines="1"
+                    android:textColor="@color/color_gray_m"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTitleContact"
+                        android:text="Contact : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_gray_l" />
+                    <TextView
+                        android:id="@+id/tvContact"
+                        android:layout_toRightOf="@id/tvTitleContact"
+                        android:text="0890373116"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:textColor="@color/color_gray_m"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTitleAge"
+                        android:text="Age : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_gray_l" />
+                    <TextView
+                        android:id="@+id/tvAge"
+                        android:layout_toRightOf="@id/tvTitleAge"
+                        android:text="18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:textColor="@color/color_gray_m"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tvTitleStatus"
+                        android:text="Status : "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/color_gray_l" />
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_toRightOf="@id/tvTitleStatus"
+                        android:text="Finished"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:textColor="@color/color_gray_m"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/line_bottom_side"
+        android:layout_marginRight="@dimen/line_bottom_side"
+        android:background="@drawable/layout_line_bottom_gray"/>
+</LinearLayout>

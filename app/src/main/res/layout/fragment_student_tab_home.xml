@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".student.fragment.FragmentTabHome">
+
+        <RelativeLayout style="@style/home_layout_profile">
+
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                style="@style/home_img_profile"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvMyProfile"
+                style="@style/home_my_profile"
+                android:layout_below="@id/imgProfile"
+                android:text="@string/text_my_profile"
+                />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/home_name"
+                android:layout_below="@id/tvMyProfile"
+                android:text="@string/home_student_name" />
+
+        </RelativeLayout>
+
+    <LinearLayout style="@style/home_layout">
+
+        <LinearLayout style="@style/home_layout_inside">
+
+            <RelativeLayout
+                android:id="@+id/btnTimeTable"
+                android:background="@drawable/home_right_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgTimeTable"
+                    android:src="@drawable/ic_timetable"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgTimeTable"
+                    android:text="@string/text_time_table"
+                    style="@style/home_layout_inside_textview" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnEducation"
+                android:background="@drawable/home_left_bottom"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgEducation"
+                    android:src="@drawable/ic_education"
+                    style="@style/home_layout_inside_image" />
+                <TextView
+                    android:layout_below="@id/imgEducation"
+                    android:text="@string/text_education"
+                    style="@style/home_layout_inside_textview"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/home_layout_inside">
+
+            <RelativeLayout
+                android:id="@+id/btnStatus"
+                android:background="@drawable/home_right_top"
+                style="@style/home_layout_inside_button">
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:src="@drawable/ic_status"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgStatus"
+                    android:text="@string/text_status"
+                    style="@style/home_layout_inside_textview"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnLocation"
+                android:background="@drawable/home_left_top"
+                style="@style/home_layout_inside_button" >
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    android:src="@drawable/ic_location"
+                    style="@style/home_layout_inside_image"/>
+                <TextView
+                    android:layout_below="@id/imgLocation"
+                    android:text="@string/text_location"
+                    style="@style/home_layout_inside_textview"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

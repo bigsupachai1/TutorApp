@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".tutor.adapter.home.badges.TutorSeeBadgesAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/layout_border_conor"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/imgStudent"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/layout_border_conor_black_not_pressed">
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:src="@mipmap/ic_launcher"
+                android:layout_alignParentRight="true"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:text="Badges Name"
+                android:layout_marginLeft="8dp"
+                style="@style/textview_student_name" />
+            <ImageView
+                android:id="@+id/imgCircle"
+                android:layout_toRightOf="@id/tvStudentName"
+                android:src="@drawable/circle_gray"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="14dp"/>
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_toRightOf="@id/imgCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="2017"
+                android:textColor="@color/color_gray_h"/>
+
+            <TextView
+                android:id="@+id/tvCourse"
+                android:text="asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
+                android:layout_below="@id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:textColor="@color/color_blone"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
