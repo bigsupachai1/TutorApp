@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent i = new Intent(this , TabTutorActivity.class);
-        startActivity(i);
-//
-        Intent i1 = new Intent(this , TabStudentActivity.class);
-        startActivity(i1);
+//        Intent i = new Intent(this , TabTutorActivity.class);
+//        startActivity(i);
+////
+//        Intent i1 = new Intent(this , TabStudentActivity.class);
+//        startActivity(i1);
 
+        Intent i2 = new Intent(this,LoginActivity.class);
+        startActivity(i2);
         finish();
     }
 }

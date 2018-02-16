@@ -46,7 +46,11 @@
     <string name="text_mrt">MRT</string>
     <string name="text_mall">MALL</string>
     <string name="text_account">Account</string>
+    <string name="text_forgot_pw">Forgot Password?</string>
+    <string name="text_click_here"><u>Click Here</u></string>
 
+    <string name="text_login_with_facebook">Login With Facebook</string>
+    <string name="text_sign_up">Sign Up</string>
     <string name="text_login">Login</string>
     <string name="text_logout">Logout</string>
     <!-- Day Month -->
