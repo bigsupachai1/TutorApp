@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+
     android:fillViewport="true"
     tools:context="siam.big.tutor.LoginActivity">
  <LinearLayout
      android:layout_width="match_parent"
      android:layout_height="match_parent"
-     android:orientation="vertical">
+     android:orientation="vertical"
+     android:background="@android:color/white">
         <!-- Logo -->
         <RelativeLayout
-            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="150dp"
+            android:background="@drawable/bg_toolbar"
+            >
         <ImageView
             android:id="@+id/imgLogo"
             android:src="@mipmap/ic_launcher"
@@ -35,7 +37,7 @@
             android:background="@drawable/edittext_border_conor_sky"
             android:gravity="center">
             <ImageView
-                android:src="@drawable/ic_user_white"
+                android:src="@drawable/ic_human_blue"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="24dp"
@@ -45,8 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/text_username"
-                android:textColor="@android:color/white"
-                android:textColorHint="@color/color_sky_l"
+                android:textColor="@color/color_blue_2"
+                android:textColorHint="@color/color_sky"
                 android:layout_marginRight="24dp"
                 android:paddingTop="12dp"
                 android:paddingBottom="12dp"
@@ -65,7 +67,7 @@
         android:background="@drawable/edittext_border_conor_sky"
         android:gravity="center">
         <ImageView
-            android:src="@drawable/ic_lock_white"
+            android:src="@drawable/ic_lock_blue"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginLeft="24dp"
@@ -75,8 +77,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/text_password"
-            android:textColor="@android:color/white"
-            android:textColorHint="@color/color_sky_l"
+            android:textColor="@color/color_blue_2"
+            android:textColorHint="@color/color_sky"
             android:layout_marginRight="24dp"
             android:paddingTop="12dp"
             android:paddingBottom="12dp"
@@ -96,7 +98,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:background="@drawable/button_border_conor_white"/>
+        android:background="@drawable/button_border_conor_blue"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +107,7 @@
         android:layout_marginTop="8dp">
         <TextView
             android:text="@string/text_forgot_pw"
-            android:textColor="@android:color/white"
+            android:textColor="@color/color_blue"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -115,7 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
+            android:textColor="@color/color_blue"
             android:textSize="14sp"
             android:layout_marginLeft="4dp"/>
     </LinearLayout>
@@ -144,7 +146,7 @@
         android:layout_marginTop="8dp"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:textColor="@color/color_blue"
-        android:background="@drawable/button_border_white_conor_white"/>
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_conor_blone"/>
  </LinearLayout>
 </ScrollView>

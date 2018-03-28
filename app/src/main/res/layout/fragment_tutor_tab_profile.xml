@@ -112,6 +112,7 @@
             </RelativeLayout>
             <!-- Post -->
             <RelativeLayout
+                android:id="@+id/btnBadges"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,20 +131,19 @@
                     android:layout_marginRight="12dp"/>
                 <TextView
                     android:id="@+id/tvPost"
-                    android:text="@string/text_post_cap"
+                    android:text="@string/text_badges"
                     android:textColor="@color/color_gray_h"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@id/imgPost"
                     android:layout_centerVertical="true"
                     android:textSize="16sp" />
-                <android.support.v7.widget.SwitchCompat
-                    android:id="@+id/switchPost"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:id="@+id/imgArrowBadges"
                     android:layout_alignParentRight="true"
-                    android:theme="@style/Switch"
-                    />
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@mipmap/ic_launcher"/>
             </RelativeLayout>
             <!-- Language -->
             <RelativeLayout
@@ -164,7 +164,7 @@
                     android:layout_marginBottom="4dp"
                     android:layout_marginRight="12dp"/>
                 <TextView
-                    android:id="@+id/tvLanguage"
+                    android:id="@+id/tvLanguageText"
                     android:text="@string/text_Language_cap"
                     android:textColor="@color/color_gray_h"
                     android:layout_width="wrap_content"
@@ -173,20 +173,20 @@
                     android:layout_centerVertical="true"
                     android:textSize="16sp" />
                 <ImageView
-                    android:id="@+id/imgArrowCity"
+                    android:id="@+id/imgArrowLanguage"
                     android:layout_alignParentRight="true"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@mipmap/ic_launcher"/>
                 <TextView
-                    android:id="@+id/tvCitySelect"
+                    android:id="@+id/tvLanguage"
                     android:text="@string/text_language_english"
                     android:textColor="@color/color_gray_m"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_toLeftOf="@id/imgArrowCity"
-                    android:layout_toRightOf="@id/tvCity"
+                    android:layout_toLeftOf="@id/imgArrowLanguage"
+                    android:layout_toRightOf="@id/tvLanguageText"
                     android:textSize="16sp"
                     android:gravity="right"
                     android:layout_marginLeft="16dp"

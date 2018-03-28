@@ -9,8 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
+import siam.big.tutor.tutor.activity.profile.badges.TutorSeeBadgesActivity;
 import siam.big.tutor.tutor.activity.profile.ProfileTutorActivity;
 import siam.big.tutor.view.Transitions;
 
@@ -21,6 +23,7 @@ import siam.big.tutor.view.Transitions;
 public class FragmentTabProfile extends Fragment implements View.OnClickListener{
     private static final String TAG = "FragmentTabProfile";
 
+    private RelativeLayout btnBadges;
     private ImageView imgEditProfile;
 
     public FragmentTabProfile() {
@@ -65,7 +68,10 @@ public class FragmentTabProfile extends Fragment implements View.OnClickListener
 
     private void init(View view){
         //findViewById Here
+        btnBadges = view.findViewById(R.id.btnBadges);
         imgEditProfile = view.findViewById(R.id.imgEditProfile);
+
+        btnBadges.setOnClickListener(this);
         imgEditProfile.setOnClickListener(this);
     }
 
@@ -76,6 +82,11 @@ public class FragmentTabProfile extends Fragment implements View.OnClickListener
         switch (view.getId()){
             case R.id.imgEditProfile:
                 i = new Intent(getContext(), ProfileTutorActivity.class);
+                startActivity(i);
+                Transitions.Fragment.toRight(getActivity());
+                break;
+            case R.id.btnBadges:
+                i = new Intent(getContext() , TutorSeeBadgesActivity.class);
                 startActivity(i);
                 Transitions.Fragment.toRight(getActivity());
                 break;

@@ -1,4 +1,4 @@
-package siam.big.tutor.tutor.adapter.home.badges;
+package siam.big.tutor.tutor.adapter.profile.badges;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

@@ -46,16 +46,18 @@
             android:name=".tutor.activity.home.course.TutorCourseMenuActivity"
             android:theme="@style/Popup" />
         <activity
-            android:name=".tutor.activity.home.badges.TutorSeeBadgesActivity"
+            android:name=".tutor.activity.profile.badges.TutorSeeBadgesActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".tutor.activity.home.badges.TutorBadgesMenuActivity"
+            android:name=".tutor.activity.profile.badges.TutorBadgesMenuActivity"
             android:theme="@style/Popup" />
         <activity android:name=".student.activity.home.timetable.TimeTableActivity" />
         <activity android:name=".student.activity.home.timetable.TimeTableAddActivity" />
         <activity android:name=".student.activity.profile.ProfileStudentActivity" />
         <activity android:name=".tutor.activity.profile.ProfileTutorActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".all.announce.AnnounceActivity" />
+        <activity android:name=".all.announce.AnnounceAddActivity"></activity>
     </application>
 
 </manifest>

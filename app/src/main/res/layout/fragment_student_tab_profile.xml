@@ -173,7 +173,7 @@
                     android:layout_centerVertical="true"
                     android:textSize="16sp" />
                 <ImageView
-                    android:id="@+id/imgArrowCity"
+                    android:id="@+id/imgArrowLanguage"
                     android:layout_alignParentRight="true"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -185,8 +185,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_toLeftOf="@id/imgArrowCity"
-                    android:layout_toRightOf="@id/tvCity"
+                    android:layout_toLeftOf="@id/imgArrowLanguage"
+                    android:layout_toRightOf="@id/tvLanguage"
                     android:textSize="16sp"
                     android:gravity="right"
                     android:layout_marginLeft="16dp"

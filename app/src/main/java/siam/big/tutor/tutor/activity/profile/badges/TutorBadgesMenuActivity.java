@@ -1,4 +1,4 @@
-package siam.big.tutor.tutor.activity.home.badges;
+package siam.big.tutor.tutor.activity.profile.badges;
 
 import android.app.Activity;
 import android.content.Intent;

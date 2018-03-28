@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:weightSum="2"
     android:background="@android:color/transparent"
-    tools:context="siam.big.tutor.tutor.activity.home.badges.TutorBadgesMenuActivity">
+    tools:context="siam.big.tutor.tutor.activity.profile.badges.TutorBadgesMenuActivity">
 
     <RelativeLayout
         android:id="@+id/btnFinish"

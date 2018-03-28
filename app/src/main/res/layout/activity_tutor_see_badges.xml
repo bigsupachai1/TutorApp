@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/app_background"
-    tools:context="siam.big.tutor.tutor.activity.home.badges.TutorSeeBadgesActivity">
+    tools:context="siam.big.tutor.tutor.activity.profile.badges.TutorSeeBadgesActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         app:contentInsetLeft="0dp"

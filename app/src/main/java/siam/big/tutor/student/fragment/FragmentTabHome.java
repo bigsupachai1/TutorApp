@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
+import siam.big.tutor.all.announce.AnnounceActivity;
 import siam.big.tutor.student.activity.home.timetable.TimeTableActivity;
 import siam.big.tutor.view.Transitions;
 
@@ -23,7 +24,7 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
     private static final String TAG = "FragmentTabHome";
 
     private RelativeLayout btnTimeTable;
-    private RelativeLayout btnEducation;
+    private RelativeLayout btnAnnounce;
     private RelativeLayout btnStatus;
     private RelativeLayout btnLocation;
 
@@ -66,15 +67,13 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Intent i;
+        Intent i = null;
         switch (view.getId()){
             case R.id.btnTimeTable :
                 i = new Intent(getContext(), TimeTableActivity.class);
-                startActivity(i);
-                Transitions.Fragment.toRight(getActivity());
                 break;
-            case R.id.btnEducation :
-
+            case R.id.btnAnnounce :
+                i = new Intent(getContext(), AnnounceActivity.class);
                 break;
             case R.id.btnStatus :
 
@@ -83,17 +82,21 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
 
                 break;
         }
+        if(i != null){
+            startActivity(i);
+            Transitions.Fragment.toRight(getActivity());
+        }
     }
 
     private void init(View view){
         //findViewById Here
         btnTimeTable = (RelativeLayout) view.findViewById(R.id.btnTimeTable);
-        btnEducation = (RelativeLayout) view.findViewById(R.id.btnEducation);
+        btnAnnounce = (RelativeLayout) view.findViewById(R.id.btnAnnounce);
         btnStatus = (RelativeLayout) view.findViewById(R.id.btnStatus);
         btnLocation = (RelativeLayout) view.findViewById(R.id.btnLocation);
 
         btnTimeTable.setOnClickListener(this);
-        btnEducation.setOnClickListener(this);
+        btnAnnounce.setOnClickListener(this);
         btnStatus.setOnClickListener(this);
         btnLocation.setOnClickListener(this);
     }

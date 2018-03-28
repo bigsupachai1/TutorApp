@@ -10,24 +10,58 @@
 
         <RelativeLayout style="@style/home_layout_profile">
 
-
             <ImageView
                 android:id="@+id/imgProfile"
                 style="@style/home_img_profile"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
-                android:id="@+id/tvMyProfile"
-                style="@style/home_my_profile"
-                android:layout_below="@id/imgProfile"
-                android:text="@string/text_my_profile"
-                />
-
-            <TextView
                 android:id="@+id/tvName"
                 style="@style/home_name"
-                android:layout_below="@id/tvMyProfile"
+                android:layout_below="@id/imgProfile"
                 android:text="@string/home_student_name" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/tvName"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_my_coin"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/color_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_coin"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="4dp"/>
+                <TextView
+                    android:id="@+id/tvCoins"
+                    android:text="100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="2dp"
+                    />
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -50,16 +84,16 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/btnEducation"
+                android:id="@+id/btnAnnounce"
                 android:background="@drawable/home_left_bottom"
                 style="@style/home_layout_inside_button">
                 <ImageView
-                    android:id="@+id/imgEducation"
-                    android:src="@drawable/ic_education"
+                    android:id="@+id/imgAnnounce"
+                    android:src="@drawable/ic_announce"
                     style="@style/home_layout_inside_image" />
                 <TextView
-                    android:layout_below="@id/imgEducation"
-                    android:text="@string/text_education"
+                    android:layout_below="@id/imgAnnounce"
+                    android:text="@string/text_announce"
                     style="@style/home_layout_inside_textview"/>
             </RelativeLayout>
 

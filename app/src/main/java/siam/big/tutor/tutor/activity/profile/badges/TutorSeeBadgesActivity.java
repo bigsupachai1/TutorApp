@@ -1,4 +1,4 @@
-package siam.big.tutor.tutor.activity.home.badges;
+package siam.big.tutor.tutor.activity.profile.badges;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import siam.big.tutor.R;
-import siam.big.tutor.tutor.adapter.home.badges.TutorSeeBadgesAdapter;
+import siam.big.tutor.tutor.adapter.profile.badges.TutorSeeBadgesAdapter;
 import siam.big.tutor.tutor.listener.ListenerBadges;
 import siam.big.tutor.view.Recycleviews;
 import siam.big.tutor.view.Toolbars;

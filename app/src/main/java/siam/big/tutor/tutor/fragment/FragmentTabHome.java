@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
-import siam.big.tutor.tutor.activity.home.badges.TutorSeeBadgesActivity;
+import siam.big.tutor.all.announce.AnnounceActivity;
 import siam.big.tutor.tutor.activity.home.course.TutorSeeCourseActivity;
 import siam.big.tutor.tutor.activity.home.student.TutorSeeStudentActivity;
 import siam.big.tutor.view.Transitions;
@@ -24,7 +24,7 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "FragmentTemplate";
 
-    private RelativeLayout btnStudent,btnCourse,btnStatus,btnBadges;
+    private RelativeLayout btnStudent,btnCourse,btnStatus,btnAnnounce;
 
     public FragmentTabHome() {
         //Constructor
@@ -68,12 +68,10 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        Intent i ;
+        Intent i = null;
         switch (view.getId()){
             case R.id.btnStudent:
                 i = new Intent(getContext(), TutorSeeStudentActivity.class);
-                getContext().startActivity(i);
-                Transitions.Fragment.toRight(getActivity());
 //                getChildFragmentManager().beginTransaction()
 //                        .setCustomAnimations(R.anim.fade_in,R.anim.scale_down,R.anim.scale_up,R.anim.fade_out)
 //                        .replace(R.id.container, TutorSeeStudentFragment.newInstance(123))
@@ -82,27 +80,26 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btnCourse:
                 i = new Intent(getContext() , TutorSeeCourseActivity.class);
-                getContext().startActivity(i);
-                Transitions.Fragment.toRight(getActivity());
                 break;
-            case R.id.btnBadges:
-                i = new Intent(getContext() , TutorSeeBadgesActivity.class);
-                getContext().startActivity(i);
-                Transitions.Fragment.toRight(getActivity());
+            case R.id.btnAnnounce:
+                i = new Intent(getContext() , AnnounceActivity.class);
                 break;
         }
-
+        if(i != null){
+            startActivity(i);
+            Transitions.Fragment.toRight(getActivity());
+        }
     }
 
     private void init(View view){
         //findViewById Here
         btnStudent = (RelativeLayout)view.findViewById(R.id.btnStudent);
         btnCourse = (RelativeLayout)view.findViewById(R.id.btnCourse);
-        btnBadges = (RelativeLayout)view.findViewById(R.id.btnBadges);
+        btnAnnounce = (RelativeLayout)view.findViewById(R.id.btnAnnounce);
         btnStatus = (RelativeLayout)view.findViewById(R.id.btnStatus);
 
         btnStudent.setOnClickListener(this);
-        btnBadges.setOnClickListener(this);
+        btnAnnounce.setOnClickListener(this);
         btnCourse.setOnClickListener(this);
     }
 

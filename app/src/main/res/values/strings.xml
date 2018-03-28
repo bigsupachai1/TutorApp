@@ -9,18 +9,32 @@
 
     <string name="text_language_english">English</string>
     <string name="text_language_thai">ไทย</string>
+    <string name="text_teach_mode">Teach Mode</string>
     <string name="text_gender">gender</string>
+    <string name="text_gender_uppercase">Gender</string>
     <string name="text_male">Male</string>
     <string name="text_female">Female</string>
     <string name="text_birthday">birthday</string>
     <string name="text_contact">contact</string>
     <string name="text_special">special</string>
+    <string name="text_special_uppercase">Special</string>
     <string name="text_special_study_mode">Study Mode :</string>
     <string name="text_special_level">Level :</string>
     <string name="text_special_skill">Skill :</string>
     <string name="text_special_other">Other :</string>
     <string name="text_username">username</string>
     <string name="text_password">password</string>
+
+    <string name="text_single">Single</string>
+    <string name="text_group">Group</string>
+    <string name="text_level">Level</string>
+    <string name="text_basic">Basic</string>
+    <string name="text_fair">Fair</string>
+    <string name="text_excellent">Excellent</string>
+    <string name="text_other">Other</string>
+    <string name="text_skill">Skill</string>
+    <string name="text_price_per_hour">Price/Hr</string>
+
 
     <!-- Example -->
     <string name="home_student_name">Student Name</string>
@@ -48,11 +62,20 @@
     <string name="text_account">Account</string>
     <string name="text_forgot_pw">Forgot Password?</string>
     <string name="text_click_here"><u>Click Here</u></string>
+    <string name="text_my_coin">My Coins</string>
 
     <string name="text_login_with_facebook">Login With Facebook</string>
     <string name="text_sign_up">Sign Up</string>
     <string name="text_login">Login</string>
     <string name="text_logout">Logout</string>
+
+    <string name="text_add">Add</string>
+    <string name="text_select_subject">Select Subject</string>
+    <string name="text_select_course">Select Course</string>
+    <string name="text_select_province">Select Province</string>
+    <string name="text_select_city">Select City</string>
+
+    <string name="text_date">Date</string>
     <!-- Day Month -->
     <string name="text_sunday">Sun</string>
     <string name="text_monday">Mon</string>
@@ -75,6 +98,7 @@
     <string name="text_november">November</string>
     <string name="text_december">December</string>
 
+    <string name="text_announce">Announce</string>
 
     <!-- Student -->
     <string name="title_activity_tab_student">TabStudentActivity</string>
