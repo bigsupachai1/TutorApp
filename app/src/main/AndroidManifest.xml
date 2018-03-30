@@ -57,7 +57,8 @@
         <activity android:name=".tutor.activity.profile.ProfileTutorActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".all.announce.AnnounceActivity" />
-        <activity android:name=".all.announce.AnnounceAddActivity"></activity>
+        <activity android:name=".all.announce.AnnounceAddActivity"/>
+        <activity android:name=".tutor.activity.profile.timetable.TutorTimeTableAddActivity"/>
     </application>
 
 </manifest>
