@@ -16,7 +16,7 @@ import siam.big.tutor.R;
 
 public class FragmentTemplate  extends Fragment {
 
-    private static final String TAG = "FragmentTemplate";
+    private static final String TAG = FragmentTemplate.class.getSimpleName();
 
     private View view;
 

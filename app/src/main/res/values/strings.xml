@@ -35,7 +35,6 @@
     <string name="text_skill">Skill</string>
     <string name="text_price_per_hour">Price/Hr</string>
 
-
     <!-- Example -->
     <string name="home_student_name">Student Name</string>
     <string name="home_tutor_name">Tutor Name</string>
@@ -69,6 +68,7 @@
     <string name="text_login">Login</string>
     <string name="text_logout">Logout</string>
 
+    <!-- Fliter -->
     <string name="text_add">Add</string>
     <string name="text_select_subject">Select Subject</string>
     <string name="text_select_course">Select Course</string>

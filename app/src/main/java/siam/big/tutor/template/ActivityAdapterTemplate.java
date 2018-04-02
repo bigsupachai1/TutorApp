@@ -11,7 +11,7 @@ import siam.big.tutor.view.Transitions;
 
 public class ActivityAdapterTemplate extends AppCompatActivity {
 
-    private final static String TAG = "TutorSeeCourseActivity";
+    private static final String TAG = ActivityAdapterTemplate.class.getSimpleName();
 
     private RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;

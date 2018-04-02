@@ -51,6 +51,8 @@
                 android:layout_marginLeft="16dp"/>
             <!-- Subject -->
             <RelativeLayout
+                android:id="@+id/btnSubject"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,6 +94,8 @@
             </RelativeLayout>
             <!-- Course -->
             <RelativeLayout
+                android:id="@+id/btnCourse"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -133,6 +137,8 @@
             </RelativeLayout>
             <!-- Study Mode -->
             <RelativeLayout
+                android:id="@+id/btnStudyMode"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -174,6 +180,8 @@
             </RelativeLayout>
             <!-- Province -->
             <RelativeLayout
+                android:id="@+id/btnProvince"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,6 +223,8 @@
             </RelativeLayout>
             <!-- City -->
             <RelativeLayout
+                android:id="@+id/btnCity"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

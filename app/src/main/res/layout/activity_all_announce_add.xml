@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
-    tools:context="siam.big.tutor.all.announce.AnnounceAddActivity">
+    tools:context="siam.big.tutor.all.activity.announce.AnnounceAddActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         app:contentInsetLeft="0dp"

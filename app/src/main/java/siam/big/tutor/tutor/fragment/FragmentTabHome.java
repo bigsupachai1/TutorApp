@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
-import siam.big.tutor.all.announce.AnnounceActivity;
+import siam.big.tutor.all.activity.announce.AnnounceActivity;
 import siam.big.tutor.tutor.activity.home.course.TutorSeeCourseActivity;
 import siam.big.tutor.tutor.activity.home.student.TutorSeeStudentActivity;
 import siam.big.tutor.view.Transitions;

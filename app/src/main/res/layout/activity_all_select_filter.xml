@@ -2,11 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/white"
-    tools:context="siam.big.tutor.all.announce.AnnounceActivity">
+    tools:context="siam.big.tutor.all.activity.search.ActivitySelectFilter">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         app:contentInsetLeft="0dp"
@@ -20,16 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:text="@string/text_announce"
+                android:id="@+id/tvToolbarFilter"
+                android:text="@string/text_select_subject"
                 style="@style/toolbar_title" />
-            <ImageView
-                android:id="@+id/imgAddAnnounce"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_plus_blue"
-                android:padding="14dp"
-                android:layout_width="52dp"
-                android:layout_height="52dp" />
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
     <android.support.v7.widget.RecyclerView
@@ -37,4 +29,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+
 </LinearLayout>

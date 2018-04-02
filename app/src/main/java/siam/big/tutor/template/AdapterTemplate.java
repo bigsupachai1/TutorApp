@@ -16,7 +16,7 @@ import siam.big.tutor.R;
  */
 
 public class AdapterTemplate extends RecyclerView.Adapter<AdapterTemplate.ViewHolder>  {
-    private static final String TAG = "AdapterTemplate";
+    private static final String TAG = AdapterTemplate.class.getSimpleName();
 
     private Context mContext ;
 
@@ -51,12 +51,17 @@ public class AdapterTemplate extends RecyclerView.Adapter<AdapterTemplate.ViewHo
 
         public ViewHolder(View itemView,Context mContext) {
             super(itemView);
+            init(itemView);
             this.mContext = mContext;
 
         }
 
         @Override
         public void onClick(View view) {
+
+        }
+
+        private void init(View view){
 
         }
     }

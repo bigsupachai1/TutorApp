@@ -2,6 +2,7 @@ package siam.big.tutor.view;
 
 import android.app.Activity;
 import android.content.Context;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 /**
@@ -14,5 +15,9 @@ public class Keyboard {
         if (null != activity.getCurrentFocus()) {
             imm.hideSoftInputFromWindow(activity.getCurrentFocus().getApplicationWindowToken(), 0);
         }
+    }
+
+    public static void hideKeyboard(Activity activity){
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
     }
 }

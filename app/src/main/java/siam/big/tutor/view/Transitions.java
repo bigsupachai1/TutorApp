@@ -36,5 +36,13 @@ public class Transitions {
         public static void toRight(FragmentActivity activity){
             activity.overridePendingTransition(R.anim.right_in,R.anim.scale_down);
         }
+
+        public static void toTop(FragmentActivity activity){
+            activity.overridePendingTransition(R.anim.to_top,R.anim.no_anim);
+        }
+
+        public static void toBottom(FragmentActivity activity){
+            activity.overridePendingTransition(R.anim.no_anim,R.anim.to_bottom);
+        }
     }
 }

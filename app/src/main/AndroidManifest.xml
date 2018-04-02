@@ -56,9 +56,10 @@
         <activity android:name=".student.activity.profile.ProfileStudentActivity" />
         <activity android:name=".tutor.activity.profile.ProfileTutorActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".all.announce.AnnounceActivity" />
-        <activity android:name=".all.announce.AnnounceAddActivity"/>
-        <activity android:name=".tutor.activity.profile.timetable.TutorTimeTableAddActivity"/>
+        <activity android:name=".all.activity.announce.AnnounceActivity" />
+        <activity android:name=".all.activity.announce.AnnounceAddActivity" />
+        <activity android:name=".tutor.activity.profile.timetable.TutorTimeTableAddActivity" />
+        <activity android:name=".all.activity.search.ActivitySelectFilter"></activity>
     </application>
 
 </manifest>

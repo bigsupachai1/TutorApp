@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/app_background"
-    tools:context="siam.big.tutor.student.fragment.FragmentTabFindTutor">
+    tools:context="siam.big.tutor.student.fragment.FragmentTabFindStudent">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         app:contentInsetLeft="0dp"
@@ -51,6 +51,8 @@
                 android:layout_marginLeft="16dp"/>
             <!-- Subject -->
             <RelativeLayout
+                android:id="@+id/btnSubject"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,6 +94,8 @@
             </RelativeLayout>
             <!-- Course -->
             <RelativeLayout
+                android:id="@+id/btnCourse"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,49 +135,10 @@
                     android:layout_centerVertical="true"
                     />
             </RelativeLayout>
-            <!-- Study Mode -->
-            <RelativeLayout
-                android:background="@drawable/layout_line_bottom_blue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:paddingLeft="@dimen/padding_student_tab_find_tutor"
-                android:paddingTop="@dimen/padding_student_tab_find_tutor"
-                android:paddingBottom="@dimen/padding_student_tab_find_tutor"
-                android:paddingRight="8dp">
-                <TextView
-                    android:id="@+id/tvStudyMode"
-                    android:text="@string/text_study_mode"
-                    android:textColor="@color/color_blue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:textSize="16sp" />
-                <ImageView
-                    android:id="@+id/imgArrowStudyMode"
-                    android:layout_alignParentRight="true"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_arrow_right"/>
-                <TextView
-                    android:id="@+id/tvStudyModeSelect"
-                    android:text="Group"
-                    android:textColor="@color/color_gray_m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_toLeftOf="@id/imgArrowStudyMode"
-                    android:layout_toRightOf="@id/tvStudyMode"
-                    android:textSize="16sp"
-                    android:gravity="right"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="32dp"
-                    android:layout_centerVertical="true"
-                    />
-            </RelativeLayout>
             <!-- Province -->
             <RelativeLayout
+                android:id="@+id/btnProvince"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,6 +180,8 @@
             </RelativeLayout>
             <!-- City -->
             <RelativeLayout
+                android:id="@+id/btnCity"
+                android:clickable="true"
                 android:background="@drawable/layout_line_bottom_blue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -29,7 +29,7 @@ public class AnnounceAdapter extends RecyclerView.Adapter<AnnounceAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         mContext = parent.getContext();
-        View itemView = LayoutInflater.from(mContext).inflate(R.layout.item_activity_announce, parent , false);
+        View itemView = LayoutInflater.from(mContext).inflate(R.layout.item_all_activity_announce, parent , false);
         return new AnnounceAdapter.ViewHolder(itemView,mContext);
     }
 

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
-import siam.big.tutor.all.announce.AnnounceActivity;
+import siam.big.tutor.all.activity.announce.AnnounceActivity;
 import siam.big.tutor.student.activity.home.timetable.TimeTableActivity;
 import siam.big.tutor.view.Transitions;
 

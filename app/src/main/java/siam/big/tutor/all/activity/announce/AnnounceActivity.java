@@ -1,4 +1,4 @@
-package siam.big.tutor.all.announce;
+package siam.big.tutor.all.activity.announce;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +26,7 @@ public class AnnounceActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_announce);
+        setContentView(R.layout.activity_all_announce);
         Toolbars.setUp(this);
         init();
         setUpRecycleView();
