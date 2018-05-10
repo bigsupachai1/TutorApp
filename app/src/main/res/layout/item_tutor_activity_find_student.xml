@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".tutor.adapter.search.TutorFindStudentAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/layout_border_conor"/>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/imgStudent"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@drawable/layout_border_conor_black_not_pressed">
+
+            <Button
+                android:id="@+id/btnRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/text_request"
+                android:textSize="8sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_border_1dp_conor_green"
+                android:layout_alignParentRight="true"/>
+
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnRequest"
+                android:paddingLeft="5dp">
+                <ImageView
+                    android:id="@+id/imgHuman"
+                    android:src="@drawable/ic_human_blue"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"/>
+                <TextView
+                    android:id="@+id/tvStudentName"
+                    android:layout_toRightOf="@id/imgHuman"
+                    android:text="Student Name"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    style="@style/textview_student_name" />
+
+                <ImageView
+                    android:id="@+id/imgCourse"
+                    android:src="@drawable/ic_book_blone"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_below="@id/tvStudentName"/>
+
+                <TextView
+                    android:id="@+id/tvCourse"
+                    android:text="Course Name"
+                    android:layout_toRightOf="@id/imgCourse"
+                    android:layout_below="@id/tvStudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_blone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/layoutTop">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    >
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tvTitleStudyMode"
+                            android:text="@string/text_study_mode_colon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_gray_l" />
+                        <TextView
+                            android:id="@+id/tvStudyMode"
+                            android:layout_toRightOf="@id/tvTitleStudyMode"
+                            android:text="Single"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/color_gray_h"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tvTitleContact"
+                            android:text="@string/text_place_colon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_gray_l" />
+                        <TextView
+                            android:id="@+id/tvContact"
+                            android:layout_toRightOf="@id/tvTitleContact"
+                            android:text="Bangkok/Dusit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/color_gray_h"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:layout_weight="1"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvTitleAge"
+                            android:text="@string/text_level_colon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_gray_l" />
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_toRightOf="@id/tvTitleAge"
+                            android:text="Basic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="10sp"
+                            android:textColor="@color/color_gray_h"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvTitleStatus"
+                            android:text="@string/text_zone_colon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_gray_l" />
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_toRightOf="@id/tvTitleStatus"
+                            android:text="Mall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:maxLines="1"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="@color/color_gray_h"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/line_bottom_side"
+        android:layout_marginRight="@dimen/line_bottom_side"
+        android:background="@drawable/layout_line_bottom_gray"/>
+</LinearLayout>

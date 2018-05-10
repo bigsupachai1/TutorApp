@@ -51,15 +51,25 @@
         <activity
             android:name=".tutor.activity.profile.badges.TutorBadgesMenuActivity"
             android:theme="@style/Popup" />
-        <activity android:name=".student.activity.home.timetable.TimeTableActivity" />
-        <activity android:name=".student.activity.home.timetable.TimeTableAddActivity" />
+        <activity android:name=".student.activity.home.timetable.StudentTimeTableActivity" />
+        <activity android:name=".student.activity.home.timetable.StudentTimeTableAddActivity" />
         <activity android:name=".student.activity.profile.ProfileStudentActivity" />
         <activity android:name=".tutor.activity.profile.ProfileTutorActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".all.activity.announce.AnnounceActivity" />
         <activity android:name=".all.activity.announce.AnnounceAddActivity" />
         <activity android:name=".tutor.activity.profile.timetable.TutorTimeTableAddActivity" />
-        <activity android:name=".all.activity.search.ActivitySelectFilter"></activity>
+        <activity android:name=".all.activity.search.SelectFilterActivity" />
+        <activity android:name=".student.activity.search.StudentFindTutorActivity" />
+        <activity android:name=".tutor.activity.search.TutorFindStudentActivity" />
+        <activity android:name=".student.activity.register.StudentRegisterPageOneActivity" />
+        <activity android:name=".student.activity.register.StudentRegisterPageTwoActivity" />
+        <activity android:name=".tutor.activity.register.TutorRegisterPageOneActivity" />
+        <activity android:name=".tutor.activity.register.TutorRegisterPageTwoActivity" />
+        <activity android:name=".tutor.activity.register.TutorRegisterPageThreeActivity" />
+        <activity android:name=".tutor.activity.register.TutorRegisterPageFourActivity" />
+        <activity android:name=".tutor.activity.home.status.TutorSeeStatusActivity"></activity>
+        <activity android:name=".student.activity.home.status.StudentSeeStatusActivity"></activity>
     </application>
 
 </manifest>

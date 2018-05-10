@@ -14,7 +14,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import siam.big.tutor.student.activity.TabStudentActivity;
+import siam.big.tutor.student.activity.register.StudentRegisterPageOneActivity;
 import siam.big.tutor.tutor.activity.TabTutorActivity;
+import siam.big.tutor.tutor.activity.register.TutorRegisterPageOneActivity;
 import siam.big.tutor.view.Keyboard;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -46,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 testLogin(etUsername.getText().toString(),etPassword.getText().toString());
                 break;
             case R.id.btnSignUp:
-
+                testRegister(etUsername.getText().toString());
                 break;
             case R.id.tvClickHere:
 
@@ -65,6 +67,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
 
         if(intent != null){
+            startActivity(intent);
+        }
+    }
+
+    private void testRegister(String username){
+        Intent intent = null ;
+        if(username.equals("tutor")){
+            intent = new Intent(this, TutorRegisterPageOneActivity.class);
+        }else if(username.equals("student")){
+            intent = new Intent(this, StudentRegisterPageOneActivity.class);
+        }
+
+        if (intent != null){
             startActivity(intent);
         }
     }

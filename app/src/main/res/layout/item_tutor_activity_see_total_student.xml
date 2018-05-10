@@ -13,7 +13,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp">
-        
+
         <ImageView
             android:id="@+id/imgStudent"
             android:src="@mipmap/ic_launcher"

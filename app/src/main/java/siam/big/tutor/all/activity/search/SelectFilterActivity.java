@@ -16,9 +16,9 @@ import siam.big.tutor.view.Recycleviews;
 import siam.big.tutor.view.Toolbars;
 import siam.big.tutor.view.Transitions;
 
-public class ActivitySelectFilter extends AppCompatActivity implements ListenerFilter<String>{
+public class SelectFilterActivity extends AppCompatActivity implements ListenerFilter<String>{
 
-    private static final String TAG = ActivitySelectFilter.class.getSimpleName();
+    private static final String TAG = SelectFilterActivity.class.getSimpleName();
 
     private RecyclerView recycle_view;
     private AdapterSelectFilter adapterTutorSelectFilter;

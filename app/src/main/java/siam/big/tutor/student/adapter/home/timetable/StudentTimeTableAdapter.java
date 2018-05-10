@@ -15,14 +15,14 @@ import siam.big.tutor.R;
  * Created by supaj571 on 03/11/2560.
  */
 
-public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.ViewHolder>  {
+public class StudentTimeTableAdapter extends RecyclerView.Adapter<StudentTimeTableAdapter.ViewHolder>  {
     private static final String TAG = "AdapterTemplate";
 
     private Context mContext ;
 
     private static ArrayList<String> example;
 
-    public TimeTableAdapter(){
+    public StudentTimeTableAdapter(){
 
     }
 
@@ -30,7 +30,7 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.View
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         mContext = parent.getContext();
         View itemView = LayoutInflater.from(mContext).inflate(R.layout.item_student_activity_time_table, parent , false);
-        return new TimeTableAdapter.ViewHolder(itemView,mContext);
+        return new StudentTimeTableAdapter.ViewHolder(itemView,mContext);
     }
 
     @Override

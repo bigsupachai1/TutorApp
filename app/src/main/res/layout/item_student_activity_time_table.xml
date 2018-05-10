@@ -8,7 +8,7 @@
     android:layout_marginLeft="@dimen/line_bottom_side"
     android:background="@drawable/layout_line_bottom_gray"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".student.adapter.home.timetable.TimeTableAdapter">
+    tools:context=".student.adapter.home.timetable.StudentTimeTableAdapter">
 
     <RelativeLayout
         style="@style/notification_item_layout"

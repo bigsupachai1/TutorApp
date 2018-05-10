@@ -27,6 +27,7 @@
 
     <string name="text_single">Single</string>
     <string name="text_group">Group</string>
+    <string name="text_both">Both</string>
     <string name="text_level">Level</string>
     <string name="text_basic">Basic</string>
     <string name="text_fair">Fair</string>
@@ -68,12 +69,53 @@
     <string name="text_login">Login</string>
     <string name="text_logout">Logout</string>
 
+    <!-- Register -->
+    <string name="text_profile">Profile</string>
+    <string name="text_next">Next</string>
+    <string name="text_done">Done</string>
+    <string name="text_first_name">First Name</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_date_of_birth">Date of Birth</string>
+    <string name="text_email">Email</string>
+    <string name="text_telephone">Telephone</string>
+    <string name="text_line_id">Line ID</string>
+    <string name="text_facebook">Facebook</string>
+    <string name="text_school">School</string>
+    <string name="text_program">Program</string>
+    <string name="text_gpa">GPA</string>
+    <string name="text_university">University</string>
+    <string name="text_faculty">Faculty</string>
+    <string name="text_one_of_two">1 of 2</string>
+    <string name="text_two_of_two">2 of 2</string>
+    <!-- Register Tutor -->
+    <string name="text_one_of_five">1 of 5</string>
+    <string name="text_two_of_five">2 of 5</string>
+    <string name="text_three_of_five">3 of 5</string>
+    <string name="text_four_of_five">4 of 5</string>
+    <string name="text_five_of_five">5 of 5</string>
+    <string name="text_history">History</string>
+    <string name="text_about_me">About me</string>
+    
+    <!-- Status -->
+    <string name="text_accept">Accept</string>
+    <string name="text_decline">Decline</string>
+    <string name="text_wait_for_payment">Wait for Payment..</string>
+    <string name="text_confirmed">Confirmed</string>
+    <string name="text_wait_for_response">Wait for Response..</string>
+    <string name="text_cancel_request">Cancel Request</string>
+
     <!-- Fliter -->
     <string name="text_add">Add</string>
     <string name="text_select_subject">Select Subject</string>
     <string name="text_select_course">Select Course</string>
     <string name="text_select_province">Select Province</string>
     <string name="text_select_city">Select City</string>
+    <string name="text_filter_results">Filter Results</string>
+    <string name="text_study_mode_colon">Study Mode:</string>
+    <string name="text_level_colon">Level:</string>
+    <string name="text_place_colon">Place:</string>
+    <string name="text_zone_colon">Zone:</string>
+    <string name="text_request">Request</string>
 
     <string name="text_date">Date</string>
     <!-- Day Month -->

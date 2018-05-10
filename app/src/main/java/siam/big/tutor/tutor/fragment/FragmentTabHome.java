@@ -13,6 +13,7 @@ import android.widget.RelativeLayout;
 import siam.big.tutor.R;
 import siam.big.tutor.all.activity.announce.AnnounceActivity;
 import siam.big.tutor.tutor.activity.home.course.TutorSeeCourseActivity;
+import siam.big.tutor.tutor.activity.home.status.TutorSeeStatusActivity;
 import siam.big.tutor.tutor.activity.home.student.TutorSeeStudentActivity;
 import siam.big.tutor.view.Transitions;
 
@@ -84,6 +85,9 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
             case R.id.btnAnnounce:
                 i = new Intent(getContext() , AnnounceActivity.class);
                 break;
+            case R.id.btnStatus:
+                i = new Intent(getContext() , TutorSeeStatusActivity.class);
+                break;
         }
         if(i != null){
             startActivity(i);
@@ -101,6 +105,7 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
         btnStudent.setOnClickListener(this);
         btnAnnounce.setOnClickListener(this);
         btnCourse.setOnClickListener(this);
+        btnStatus.setOnClickListener(this);
     }
 
 }

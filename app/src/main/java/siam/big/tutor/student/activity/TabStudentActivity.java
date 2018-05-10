@@ -17,7 +17,7 @@ import siam.big.tutor.student.fragment.FragmentTabNotification;
 import siam.big.tutor.student.fragment.FragmentTabProfile;
 
 public class TabStudentActivity extends AppCompatActivity {
-    private final static String TAG = "TabStudentActivity";
+    private final static String TAG = TabStudentActivity.class.getSimpleName();
 
     private final static int TAB_HOME = 0;
     private final static int TAB_FIND_TUTOR = 1;

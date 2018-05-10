@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="siam.big.tutor.tutor.adapter.home.status.TutorSeeStatusAdapter">
+
+    <RelativeLayout
+        android:paddingBottom="10dp"
+        style="@style/notification_item_layout">
+
+        <ImageView
+            android:id="@+id/imgNotification"
+            android:src="@drawable/ic_warning"
+            android:layout_marginTop="10dp"
+            style="@style/notification_item_layout_img" />
+
+        <TextView
+            android:id="@+id/tvFromStudent"
+            android:text="From Student Name"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/imgNotification"
+            style="@style/notification_item_layout_title" />
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:text="Student"
+            android:layout_below="@id/tvFromStudent"
+            android:layout_marginTop="8dp"
+            style="@style/notification_item_layout_date" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:text="Detail"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/tvStudentName"
+            android:layout_marginBottom="0dp"
+            style="@style/notification_item_layout_detail" />
+
+        <!-- Layout Accept & Decline -->
+        <LinearLayout
+            android:id="@+id/layoutAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvDetail"
+            android:visibility="gone"
+            android:layout_marginRight="8dp">
+            <Button
+                android:id="@+id/btnAccept"
+                android:text="@string/text_accept"
+                style="@style/status_item_button"
+                android:background="@drawable/button_border_4dp_conor_blue" />
+            <Button
+                android:id="@+id/btnDecline"
+                android:text="@string/text_decline"
+                style="@style/status_item_button"
+                android:background="@drawable/button_border_conor_red"/>
+        </LinearLayout>
+
+        <!-- Layout Wait for Payment -->
+        <LinearLayout
+            android:id="@+id/layoutPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvDetail"
+            android:visibility="gone"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:id="@+id/tvWaitForPayment"
+                android:text="@string/text_wait_for_payment"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                style="@style/status_item_button"
+                android:gravity="center"
+                android:background="@drawable/button_border_4dp_conor_blue" />
+        </LinearLayout>
+
+        <!-- Layout Confirmed -->
+        <LinearLayout
+            android:id="@+id/layoutConfirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvDetail"
+            android:visibility="gone"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/button_border_conor_green">
+            <TextView
+                android:id="@+id/tvConfirmed"
+                android:text="@string/text_confirmed"
+                android:paddingLeft="12dp"
+                style="@style/status_item_button"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:src="@mipmap/ic_launcher"/>
+        </LinearLayout>
+
+        <!-- Layout Wait for response -->
+        <LinearLayout
+            android:id="@+id/layoutWatiForResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvDetail"
+            android:visibility="visible"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:id="@+id/tvWaitForResponse"
+                android:text="@string/text_wait_for_response"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                style="@style/status_item_button"
+                android:gravity="center"
+                android:background="@drawable/button_border_4dp_conor_purple" />
+            <Button
+                android:id="@+id/btnCancelRequest"
+                android:text="@string/text_cancel_request"
+                style="@style/status_item_button"
+                android:background="@drawable/button_border_conor_red"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginRight="@dimen/line_bottom_side"
+        android:layout_marginLeft="@dimen/line_bottom_side"
+        android:background="@drawable/layout_line_bottom_gray"/>
+</LinearLayout>

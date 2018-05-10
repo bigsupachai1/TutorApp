@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/app_background"
-    tools:context="siam.big.tutor.student.activity.home.timetable.TimeTableActivity">
+    tools:context="siam.big.tutor.student.activity.home.timetable.StudentTimeTableActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".student.adapter.FragmentTapNotificationAdapter">
+    tools:context=".student.adapter.notification.FragmentTapNotificationAdapter">
 
     <RelativeLayout style="@style/notification_item_layout">
         

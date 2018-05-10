@@ -9,15 +9,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import siam.big.tutor.R;
-import siam.big.tutor.student.adapter.home.timetable.TimeTableAdapter;
+import siam.big.tutor.student.adapter.home.timetable.StudentTimeTableAdapter;
 import siam.big.tutor.view.Recycleviews;
 import siam.big.tutor.view.Toolbars;
 import siam.big.tutor.view.Transitions;
 
-public class TimeTableActivity extends AppCompatActivity implements View.OnClickListener {
+public class StudentTimeTableActivity extends AppCompatActivity implements View.OnClickListener {
     private RecyclerView mRecyclerView;
     private FloatingActionButton btnAddNewPlan;
-    private TimeTableAdapter timeTableAdapter;
+    private StudentTimeTableAdapter timeTableAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +38,7 @@ public class TimeTableActivity extends AppCompatActivity implements View.OnClick
         Intent i;
         switch (view.getId()){
             case R.id.btnAddNewPlan:
-                i = new Intent(this,TimeTableAddActivity.class);
+                i = new Intent(this,StudentTimeTableAddActivity.class);
                 startActivity(i);
                 Transitions.Activity.toRight(this);
                 break;
@@ -48,7 +48,7 @@ public class TimeTableActivity extends AppCompatActivity implements View.OnClick
     private void setUpRecycleView(){
         mRecyclerView = Recycleviews.Activity.setUpGridLayout(mRecyclerView,this,1,
                 GridLayoutManager.VERTICAL,false,this);
-        timeTableAdapter = new TimeTableAdapter();
+        timeTableAdapter = new StudentTimeTableAdapter();
         mRecyclerView.setAdapter(timeTableAdapter);
     }
 

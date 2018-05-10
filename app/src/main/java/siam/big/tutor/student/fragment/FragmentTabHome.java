@@ -12,7 +12,8 @@ import android.widget.RelativeLayout;
 
 import siam.big.tutor.R;
 import siam.big.tutor.all.activity.announce.AnnounceActivity;
-import siam.big.tutor.student.activity.home.timetable.TimeTableActivity;
+import siam.big.tutor.student.activity.home.status.StudentSeeStatusActivity;
+import siam.big.tutor.student.activity.home.timetable.StudentTimeTableActivity;
 import siam.big.tutor.view.Transitions;
 
 /**
@@ -70,13 +71,13 @@ public class FragmentTabHome extends Fragment implements View.OnClickListener {
         Intent i = null;
         switch (view.getId()){
             case R.id.btnTimeTable :
-                i = new Intent(getContext(), TimeTableActivity.class);
+                i = new Intent(getContext(), StudentTimeTableActivity.class);
                 break;
             case R.id.btnAnnounce :
                 i = new Intent(getContext(), AnnounceActivity.class);
                 break;
             case R.id.btnStatus :
-
+                i = new Intent(getContext(), StudentSeeStatusActivity.class);
                 break;
             case R.id.btnLocation :
 

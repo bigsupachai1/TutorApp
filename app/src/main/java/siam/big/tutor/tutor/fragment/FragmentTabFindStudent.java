@@ -14,7 +14,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import siam.big.tutor.R;
-import siam.big.tutor.all.activity.search.ActivitySelectFilter;
+import siam.big.tutor.all.activity.search.SelectFilterActivity;
+import siam.big.tutor.tutor.activity.search.TutorFindStudentActivity;
 import siam.big.tutor.util.Configs;
 import siam.big.tutor.view.Transitions;
 
@@ -94,22 +95,22 @@ public class FragmentTabFindStudent extends Fragment implements View.OnClickList
         Intent intent = null;
         switch (view.getId()){
             case R.id.btnSearch:
-
+                intent = new Intent(getContext(), TutorFindStudentActivity.class);
                 break;
             case R.id.btnSubject:
-                intent = new Intent(getContext(), ActivitySelectFilter.class);
+                intent = new Intent(getContext(), SelectFilterActivity.class);
                 intent.putExtra(Configs.IntentString.CODE , Configs.Code.CODE_SUBJECT);
                 break;
             case R.id.btnCourse:
-                intent = new Intent(getContext(), ActivitySelectFilter.class);
+                intent = new Intent(getContext(), SelectFilterActivity.class);
                 intent.putExtra(Configs.IntentString.CODE , Configs.Code.CODE_COURSE);
                 break;
             case R.id.btnProvince:
-                intent = new Intent(getContext(), ActivitySelectFilter.class);
+                intent = new Intent(getContext(), SelectFilterActivity.class);
                 intent.putExtra(Configs.IntentString.CODE , Configs.Code.CODE_PROVINCE);
                 break;
             case R.id.btnCity:
-                intent = new Intent(getContext(), ActivitySelectFilter.class);
+                intent = new Intent(getContext(), SelectFilterActivity.class);
                 intent.putExtra(Configs.IntentString.CODE , Configs.Code.CODE_CITY);
                 break;
         }
@@ -156,7 +157,5 @@ public class FragmentTabFindStudent extends Fragment implements View.OnClickList
         btnProvince.setOnClickListener(this);
         btnCity.setOnClickListener(this);
     }
-
-
 
 }

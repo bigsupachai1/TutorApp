@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import siam.big.tutor.R;
-import siam.big.tutor.tutor.adapter.home.announce.AnnounceAdapter;
+import siam.big.tutor.all.adapter.announce.AnnounceAdapter;
 import siam.big.tutor.view.Recycleviews;
 import siam.big.tutor.view.Toolbars;
 import siam.big.tutor.view.Transitions;

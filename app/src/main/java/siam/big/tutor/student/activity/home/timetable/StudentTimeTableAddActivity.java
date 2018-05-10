@@ -15,8 +15,8 @@ import siam.big.tutor.view.Dialogs;
 import siam.big.tutor.view.Toolbars;
 import siam.big.tutor.view.Transitions;
 
-public class TimeTableAddActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener , View.OnClickListener {
-    private final static String TAG = "TimeTableAddActivity";
+public class StudentTimeTableAddActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener , View.OnClickListener {
+    private final static String TAG = "StudentTimeTableAddActivity";
     private DatePickerDialog datePickerDialog;
     private RelativeLayout btnCalendar;
     private TextView tvCalendar;
@@ -33,13 +33,13 @@ public class TimeTableAddActivity extends AppCompatActivity implements DatePicke
     protected void onResume() {
         super.onResume();
         datePickerDialog = (DatePickerDialog) getFragmentManager().findFragmentByTag(Dialogs.TAG_DATE);
-        if(datePickerDialog != null) datePickerDialog.setOnDateSetListener(TimeTableAddActivity.this);
+        if(datePickerDialog != null) datePickerDialog.setOnDateSetListener(StudentTimeTableAddActivity.this);
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Transitions.Activity.toLeft(TimeTableAddActivity.this);
+        Transitions.Activity.toLeft(StudentTimeTableAddActivity.this);
     }
 
     @Override
@@ -129,7 +129,7 @@ public class TimeTableAddActivity extends AppCompatActivity implements DatePicke
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btnCalendar:
-                    Dialogs.getDate(datePickerDialog, getFragmentManager(),TimeTableAddActivity.this);
+                    Dialogs.getDate(datePickerDialog, getFragmentManager(),StudentTimeTableAddActivity.this);
                 break;
         }
     }

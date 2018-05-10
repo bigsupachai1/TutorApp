@@ -1,4 +1,4 @@
-package siam.big.tutor.student.adapter;
+package siam.big.tutor.tutor.adapter.notification;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import siam.big.tutor.R;
-import siam.big.tutor.student.model.FragmentTabNotificationDao;
-import siam.big.tutor.student.model.FragmentTabNotificationDao.FragmentTabNotificationItemDao;
+import siam.big.tutor.tutor.model.FragmentTabNotificationDao;
+import siam.big.tutor.tutor.model.FragmentTabNotificationDao.FragmentTabNotificationItemDao;
 
 /**
  * Created by supaj571 on 03/11/2560.
@@ -29,7 +29,7 @@ public class FragmentTapNotificationAdapter extends RecyclerView.Adapter<Fragmen
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         mContext = parent.getContext();
-        View itemView = LayoutInflater.from(mContext).inflate(R.layout.item_student_tab_notification, parent , false);
+        View itemView = LayoutInflater.from(mContext).inflate(R.layout.item_tutor_tab_notification, parent , false);
         return new FragmentTapNotificationAdapter.ViewHolder(itemView,mContext);
     }
 

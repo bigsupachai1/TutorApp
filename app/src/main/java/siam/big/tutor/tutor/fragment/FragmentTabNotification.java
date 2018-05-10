@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import siam.big.tutor.R;
-import siam.big.tutor.tutor.adapter.FragmentTapNotificationAdapter;
+import siam.big.tutor.tutor.adapter.notification.FragmentTapNotificationAdapter;
 import siam.big.tutor.tutor.model.FragmentTabNotificationDao;
 import siam.big.tutor.view.Recycleviews;
 
