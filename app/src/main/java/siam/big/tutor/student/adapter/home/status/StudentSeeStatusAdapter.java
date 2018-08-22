@@ -1,6 +1,8 @@
 package siam.big.tutor.student.adapter.home.status;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +12,8 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 
 import siam.big.tutor.R;
+import siam.big.tutor.student.activity.home.status.StudentCourseBookingActivity;
+import siam.big.tutor.view.Transitions;
 
 
 /**
@@ -96,7 +100,25 @@ public class StudentSeeStatusAdapter extends RecyclerView.Adapter<StudentSeeStat
 
         @Override
         public void onClick(View view) {
-
+            Intent i = null;
+            switch (view.getId()){
+                case R.id.layoutAccept:
+                    i = new Intent(mContext, StudentCourseBookingActivity.class);
+                    break;
+                case R.id.layoutPayment:
+                    i = new Intent(mContext, StudentCourseBookingActivity.class);
+                    break;
+                case R.id.layoutConfirmed:
+                    i = new Intent(mContext, StudentCourseBookingActivity.class);
+                    break;
+                case R.id.layoutWatiForResponse:
+                    i = new Intent(mContext, StudentCourseBookingActivity.class);
+                    break;
+            }
+            if(i != null){
+                mContext.startActivity(i);
+                Transitions.Activity.toRight((AppCompatActivity) mContext);
+            }
         }
 
         private void init(View view){
@@ -104,6 +126,11 @@ public class StudentSeeStatusAdapter extends RecyclerView.Adapter<StudentSeeStat
             layoutPayment =(LinearLayout)view.findViewById(R.id.layoutPayment);
             layoutConfirmed =(LinearLayout)view.findViewById(R.id.layoutConfirmed);
             layoutWatiForResponse =(LinearLayout)view.findViewById(R.id.layoutWatiForResponse);
+
+            layoutAccept.setOnClickListener(this);
+            layoutPayment.setOnClickListener(this);
+            layoutConfirmed.setOnClickListener(this);
+            layoutWatiForResponse.setOnClickListener(this);
         }
     }
 }

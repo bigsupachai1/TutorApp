@@ -40,6 +40,8 @@
     <string name="home_student_name">Student Name</string>
     <string name="home_tutor_name">Tutor Name</string>
     <string name="text_my_profile">My Profile</string>
+    <string name="text_tutor_detail">Tutor Detail</string>
+    <string name="text_course_booking_details">Course Booking details</string>
     <string name="text_total">Total</string>
     <string name="text_rate">Rate</string>
     <string name="text_edit">Edit</string>
@@ -63,6 +65,9 @@
     <string name="text_forgot_pw">Forgot Password?</string>
     <string name="text_click_here"><u>Click Here</u></string>
     <string name="text_my_coin">My Coins</string>
+    <string name="text_my_coin_colon">My Coins:</string>
+    <string name="text_view_tutor_profile">View Tutor Profile</string>
+    <string name="text_accept_and_booking">Accept&amp;Booking</string>
 
     <string name="text_login_with_facebook">Login With Facebook</string>
     <string name="text_sign_up">Sign Up</string>
@@ -95,7 +100,7 @@
     <string name="text_five_of_five">5 of 5</string>
     <string name="text_history">History</string>
     <string name="text_about_me">About me</string>
-    
+
     <!-- Status -->
     <string name="text_accept">Accept</string>
     <string name="text_decline">Decline</string>
@@ -103,6 +108,7 @@
     <string name="text_confirmed">Confirmed</string>
     <string name="text_wait_for_response">Wait for Response..</string>
     <string name="text_cancel_request">Cancel Request</string>
+    <string name="text_payment">Payment</string>
 
     <!-- Fliter -->
     <string name="text_add">Add</string>
@@ -153,7 +159,11 @@
     <string name="text_find_tutor">Find Tutor</string>
     <string name="text_study_mode">Study Mode</string>
     <string name="text_province">Province</string>
+    <string name="text_province_colon">Province:</string>
     <string name="text_city">City</string>
+    <string name="text_city_colon">City:</string>
+    <string name="text_college_colon">College:</string>
+    <string name="text_school_colon">School:</string>
     <string name="text_zone">Zone</string>
 
     <!-- Tutor -->
@@ -169,4 +179,7 @@
     <string name="text_music">Music</string>
     <string name="text_math">Math</string>
     <string name="text_thai">Thai</string>
+
+    <string name="text_course_booking_payment_top">If you make a payment.</string>
+    <string name="text_course_booking_payment_bottom">We will send you the contact information of student to you</string>
 </resources>

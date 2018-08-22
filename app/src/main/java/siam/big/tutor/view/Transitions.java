@@ -45,4 +45,6 @@ public class Transitions {
             activity.overridePendingTransition(R.anim.no_anim,R.anim.to_bottom);
         }
     }
+
+
 }

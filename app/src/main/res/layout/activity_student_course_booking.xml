@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".all.adapter.announce.AnnounceAdapter"
-    android:background="@android:color/white">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="siam.big.tutor.student.activity.home.status.StudentCourseBookingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="0dp"
+        android:background="@drawable/bg_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="@string/text_course_booking_details"
+                style="@style/toolbar_title" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/layout_border_gray_solid_gray"
+        android:background="@color/color_white"
         android:layout_marginLeft="6dp"
         android:layout_marginRight="6dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        >
+        android:layout_marginBottom="16dp">
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true">
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/tvSubjectType"
                 android:gravity="center"
@@ -42,7 +62,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp">
-                <!-- subject -->
+                <!-- TutorName -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/layout_border_gray">
+                    <ImageView
+                        android:src="@drawable/ic_human_blone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/tvTutor"
+                        android:text="From Tutor Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_blone"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <!-- Course -->
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -55,6 +103,7 @@
                         android:src="@drawable/ic_book"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:padding="2dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginRight="8dp"
                         android:layout_gravity="center"/>
@@ -69,7 +118,7 @@
                         android:maxLines="1"
                         android:ellipsize="end"/>
                 </LinearLayout>
-                <!-- Date -->
+                <!-- price/hour -->
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -82,41 +131,13 @@
                         android:src="@drawable/ic_point_gray"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:padding="6dp"
+                        android:padding="5dp"
                         android:layout_marginLeft="12dp"
                         android:layout_marginRight="4dp"
                         android:layout_gravity="center"/>
                     <TextView
-                        android:id="@+id/tvDate"
-                        android:text="Wed,Sun 16.30"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/color_gray_h"
-                        android:textSize="14sp"
-                        android:layout_gravity="center"
-                        android:maxLines="1"
-                        android:ellipsize="end"/>
-                </LinearLayout>
-                <!-- Address -->
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginRight="8dp"
-                    android:padding="8dp"
-                    android:background="@drawable/layout_border_gray">
-                    <ImageView
-                        android:src="@drawable/ic_point_gray"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:padding="6dp"
-                        android:layout_marginLeft="12dp"
-                        android:layout_marginRight="4dp"
-                        android:layout_gravity="center"/>
-                    <TextView
-                        android:id="@+id/tvAddress"
-                        android:text="Bangkok/Dusit/BTS"
+                        android:id="@+id/tvPrice"
+                        android:text="300 Coins/Hour"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/color_gray_h"
@@ -127,15 +148,29 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-        <Button
-            android:id="@+id/btnStatus"
-            android:text="OFF"
-            android:textSize="16sp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:background="@drawable/button_border_conor_red"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"/>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnViewTutorProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/text_view_tutor_profile"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_border_1dp_conor_blue"/>
+
+    <Button
+        android:id="@+id/btnAcceptAndBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/text_accept_and_booking"
+        android:textColor="@color/color_white"
+        android:background="@drawable/button_border_1dp_conor_green"/>
+
+
 </LinearLayout>

@@ -9,6 +9,7 @@
     <color name="color_white_pressed">#f1f1f1</color>
     <color name="color_gray_h">#595959</color>
     <color name="color_gray_m">#919191</color>
+    <color name="color_gray_lm">#D3D3D3</color>
     <color name="color_gray_l">#B5B5B5</color>
     <color name="color_gray_ll">#F0F0F2</color>
     <color name="color_gray_lll">#E3E4E6</color>

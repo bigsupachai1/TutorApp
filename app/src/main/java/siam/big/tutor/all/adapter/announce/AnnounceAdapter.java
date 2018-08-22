@@ -1,14 +1,19 @@
 package siam.big.tutor.all.adapter.announce;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
 import siam.big.tutor.R;
+import siam.big.tutor.all.activity.announce.AnnounceDetailActivity;
+import siam.big.tutor.view.Transitions;
 
 
 /**
@@ -45,16 +50,28 @@ public class AnnounceAdapter extends RecyclerView.Adapter<AnnounceAdapter.ViewHo
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private Context mContext;
-
+        private LinearLayout linearLayout;
         public ViewHolder(View itemView,Context mContext) {
             super(itemView);
             this.mContext = mContext;
-
+            init(itemView);
         }
 
         @Override
         public void onClick(View view) {
+            switch (view.getId()){
+                case R.id.linearLayout:
+                    Intent i = new Intent(mContext, AnnounceDetailActivity.class);
+                    mContext.startActivity(i);
+                    Transitions.Activity.toRight((AppCompatActivity) mContext);
+                    break;
+            }
+        }
 
+        private void init(View view){
+            linearLayout = view.findViewById(R.id.linearLayout);
+
+            linearLayout.setOnClickListener(this);
         }
     }
 }

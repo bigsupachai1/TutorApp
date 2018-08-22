@@ -43,8 +43,6 @@
                 android:clickable="true"
                 android:background="@drawable/layout_border_conor">
 
-
-
                 <RelativeLayout
                     android:id="@+id/layoutMiddle"
                     android:layout_centerVertical="true"

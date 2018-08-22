@@ -8,7 +8,8 @@
 
     <RelativeLayout
         android:paddingBottom="10dp"
-        style="@style/notification_item_layout">
+        style="@style/notification_item_layout"
+        android:background="@android:color/white">
 
         <ImageView
             android:id="@+id/imgNotification"

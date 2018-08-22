@@ -68,8 +68,13 @@
         <activity android:name=".tutor.activity.register.TutorRegisterPageTwoActivity" />
         <activity android:name=".tutor.activity.register.TutorRegisterPageThreeActivity" />
         <activity android:name=".tutor.activity.register.TutorRegisterPageFourActivity" />
-        <activity android:name=".tutor.activity.home.status.TutorSeeStatusActivity"></activity>
-        <activity android:name=".student.activity.home.status.StudentSeeStatusActivity"></activity>
+        <activity android:name=".tutor.activity.home.status.TutorSeeStatusActivity" />
+        <activity android:name=".student.activity.home.status.StudentSeeStatusActivity" />
+        <activity android:name=".student.activity.search.StudentFindTutorDetailActivity" />
+        <activity android:name=".student.activity.home.status.StudentCourseBookingActivity" />
+        <activity android:name=".student.activity.home.status.StudentCourseBookingDetailActivity" />
+        <activity android:name=".tutor.activity.home.status.TutorCourseBookingDetailActivity" />
+        <activity android:name=".all.activity.announce.AnnounceDetailActivity"></activity>
     </application>
 
 </manifest>

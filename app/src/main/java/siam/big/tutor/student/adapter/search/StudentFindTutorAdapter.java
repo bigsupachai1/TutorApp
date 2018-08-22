@@ -1,14 +1,19 @@
 package siam.big.tutor.student.adapter.search;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
 import siam.big.tutor.R;
+import siam.big.tutor.student.activity.search.StudentFindTutorDetailActivity;
+import siam.big.tutor.view.Transitions;
 
 
 /**
@@ -48,7 +53,7 @@ public class StudentFindTutorAdapter extends RecyclerView.Adapter<StudentFindTut
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private Context mContext;
-
+        RelativeLayout btnTutorDetail;
         public ViewHolder(View itemView,Context mContext) {
             super(itemView);
             init(itemView);
@@ -58,11 +63,19 @@ public class StudentFindTutorAdapter extends RecyclerView.Adapter<StudentFindTut
 
         @Override
         public void onClick(View view) {
-
+            switch (view.getId()){
+                case R.id.btnTutorDetail :
+                    Intent i = new Intent(mContext, StudentFindTutorDetailActivity.class);
+                    mContext.startActivity(i);
+                    Transitions.Activity.toRight((AppCompatActivity)mContext);
+                    break;
+            }
         }
 
         private void init(View view){
+            btnTutorDetail = view.findViewById(R.id.btnTutorDetail);
 
+            btnTutorDetail.setOnClickListener(this);
         }
     }
 }
